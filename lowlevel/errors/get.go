@@ -27,6 +27,7 @@ var errorsMap = map[int]error{
 	40101037: ErrSessionExited,
 	// QRCode errors
 	40199002: ErrQrcodeExpired,
+	50199004: ErrGetFailed,
 
 	// Whitelist errors
 	CodeOfflineTaskExists: nil,

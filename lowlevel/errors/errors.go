@@ -9,6 +9,7 @@ var (
 
 	ErrOfflineInvalidLink = errors.New("invalid download link")
 
+	ErrQrcodeCancelled      = errors.New("QRcode cancelled")
 	ErrIPAbnormal           = errors.New("ip abnormal")
 	ErrPasswordIncorrect    = errors.New("password incorrect")
 	ErrLoginTwoStepVerify   = errors.New("requires two-step verification")
@@ -17,6 +18,7 @@ var (
 	ErrSessionExited        = errors.New("session exited")
 
 	ErrQrcodeExpired = errors.New("qrcode expired")
+	ErrGetFailed     = errors.New("get failed")
 
 	// ErrUnexpected is the fall-back error whose code is not handled.
 	ErrUnexpected = errors.New("unexpected error")
