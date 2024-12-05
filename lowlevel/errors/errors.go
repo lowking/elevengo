@@ -9,6 +9,7 @@ var (
 
 	ErrOfflineInvalidLink = errors.New("invalid download link")
 
+	ErrIPAbnormal           = errors.New("ip abnormal")
 	ErrPasswordIncorrect    = errors.New("password incorrect")
 	ErrLoginTwoStepVerify   = errors.New("requires two-step verification")
 	ErrAccountNotBindMobile = errors.New("account not binds mobile")

@@ -19,6 +19,7 @@ func ExampleAgent_CredentialImport() {
 		UID:  "UID-From-Cookie",
 		CID:  "CID-From-Cookie",
 		SEID: "SEID-From-Cookie",
+		KID:  "KID-From-Cookie",
 	}); err != nil {
 		log.Fatalf("Import credentail error: %s", err)
 	}
@@ -168,10 +169,10 @@ func ExampleAgent_Import() {
 	// Initialize two agents for sender and receiver
 	sender, receiver := Default(), Default()
 	sender.CredentialImport(&Credential{
-		UID: "", CID: "", SEID: "",
+		UID: "", CID: "", SEID: "", KID: "",
 	})
 	receiver.CredentialImport(&Credential{
-		UID: "", CID: "", SEID: "",
+		UID: "", CID: "", SEID: "", KID: "",
 	})
 
 	// File to send on sender's storage
@@ -215,7 +216,7 @@ func ExampleNew() {
 
 	var err error
 	if err = agent.CredentialImport(&Credential{
-		UID: "", CID: "", SEID: "",
+		UID: "", CID: "", SEID: "", KID: "",
 	}); err != nil {
 		log.Fatalf("Invalid credential, error: %s", err)
 	}

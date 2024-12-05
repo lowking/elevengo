@@ -192,7 +192,7 @@ Example:
 			// Create 115 agent
 			agent := elevengo.Default()
 			if err = agent.CredentialImport(&elevengo.Credential{
-				UID: "", CID: "", SEID: "",
+				UID: "", CID: "", SEID: "", KID: "",
 			}); err != nil {
 				log.Fatalf("Login failed: %s", err)
 			}

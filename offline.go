@@ -143,7 +143,7 @@ func (a *Agent) OfflineClear(flag OfflineClearFlag) (err error) {
 // You can use options to change the download directory:
 //
 //	agent := Default()
-//	agent.CredentialImport(&Credential{UID: "", CID: "", SEID: ""})
+//	agent.CredentialImport(&Credential{UID: "", CID: "", SEID: "", KID: ""})
 //	hashes, err := agent.OfflineAddUrl([]string{
 //		"https://foo.bar/file.zip",
 //		"magent:?xt=urn:btih:111222",

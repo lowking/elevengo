@@ -19,6 +19,7 @@ var errorsMap = map[int]error{
 	// Common errors
 	990002: ErrInvalidParameters,
 	// Login errors
+	40101004: ErrIPAbnormal,
 	40101009: ErrPasswordIncorrect,
 	40101010: ErrLoginTwoStepVerify,
 	40101030: ErrAccountNotBindMobile,
